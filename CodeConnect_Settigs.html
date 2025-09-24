@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeConnect - Settings</title>
+  <link rel="stylesheet" href="./CodeConnect_Settings.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="left-section">
+        <img src="./logo_final.png" alt="CodeConnect Logo" class="logo" />
+        <nav>
+          <a class="c1" href="./HomePage_iship.html">Home</a>
+          <a class="c1" href="./join.html">Join</a>
+          <a class="c1" href="./favourites.html">Favorites</a>
+          <a class="c1" href="./Dashboard_Iship.html">Dashboard</a>
+          <a class="c1" href="./CodeConnect_Settings.html">Settings</a>
+        </nav>
+      </div>
+      <div class="right-section">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" class="menu-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
+        <div class="ops">
+          <a class="op" href="./HomePage_iship.html">Home</a>
+          <a class="op" href="./join.html">Join</a>
+          <a class="op" href="./favourites.html">Favorites</a>
+          <a class="op" href="./Dashboard_Iship.html">Dashboard</a>
+          <a class="op" href="./CodeConnect_Settings.html">Settings</a>
+          <a class="op login-mobile" href="./loginpage.html" target="_blank">Login</a>
+        </div>
+        <a class="login desktop-login" href="./loginpage.html" target="_blank">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="settings-main">
+    <section id="settings-hero">
+      <h1>Account Settings</h1>
+      <p>Manage your profile and security preferences.</p>
+    </section>
+
+    <section id="change-password" class="settings-section">
+      <h2>Change Password</h2>
+      <form class="settings-form">
+        <div class="form-group">
+          <label for="current-password">Current Password:</label>
+          <input type="password" id="current-password" name="currentPassword" required />
+        </div>
+        <div class="form-group">
+          <label for="new-password">New Password:</label>
+          <input type="password" id="new-password" name="newPassword" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm New Password:</label>
+          <input type="password" id="confirm-password" name="confirmPassword" required />
+        </div>
+        <button type="submit" class="settings-button">Update Password</button>
+      </form>
+    </section>
+
+    <section id="edit-profile" class="settings-section">
+      <h2>Edit Profile Details</h2>
+      <form class="settings-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" value="CodeMaster" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="codemaster@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio" rows="4">Passionate coder always looking for new challenges and collaborations. Let's connect!</textarea>
+        </div>
+        <div class="form-group">
+          <label for="profile-picture">Profile Picture:</label>
+          <input type="file" id="profile-picture" name="profilePicture" accept="image/*" />
+          <p class="file-info">Max file size: 2MB. Recommended: square image.</p>
+        </div>
+        <button type="submit" class="settings-button">Save Profile</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="CodeConnect-footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>CodeConnect</h3>
+        <p>A community for coders to collaborate, solve, and grow together.</p>
+      </div>
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Join Room</a></li>
+          <li><a href="./loginpage.html">Login</a></li>
+          <li><a href="./CodeConnect_Settings.html">Settings</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CodeConnect. Built with ❤ by Team CodeVerse.</p>
+    </div>
+  </footer>
+</body>
+</html>
